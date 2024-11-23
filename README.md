@@ -36,17 +36,13 @@ Before starting, ensure you have the following:
 ### APIs Enabled on GCP
 - **Cloud Storage API**: For managing storage buckets.
 - **Compute Engine API**: For managing load balancers and IP addresses.
-- **Cloud Resource Manager API**: For project and service account management.
 - **IAM API**: For service account roles and permissions.
-- **Cloud CDN API**: Enables the Content Delivery Network for the bucket.
 
 ### Optional AWS Resources
 - **AWS Route 53**: Maps custom domain names to GCP Load Balancer.
 
 ### Tools Used
 - **Terraform**: Automates provisioning of infrastructure resources.
-- **Git**: Manages version control for the repository.
-- **GCP Console**: Configures projects, APIs, and service accounts.
 
 ---
 ## Steps to Get Started
