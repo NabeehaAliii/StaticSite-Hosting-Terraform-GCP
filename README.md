@@ -22,7 +22,33 @@ Before starting, ensure you have the following:
    - A service account key is needed to authenticate Terraform with your GCP project.
 
 ---
+## Resources and Tools Used
 
+### Google Cloud Platform (GCP)
+- **Google Storage Bucket**: Stores static website files like `index.html`.
+- **Google Compute Global Address**: Reserves a static external IP address.
+- **Google Compute Backend Bucket**: Links the Storage Bucket to the Load Balancer.
+- **Google Compute URL Map**: Maps HTTP requests to the backend bucket.
+- **Google Compute Target HTTP Proxy**: Directs traffic from the forwarding rule to the URL map.
+- **Google Compute Global Forwarding Rule**: Routes external HTTP requests to the Load Balancer.
+- **Cloud CDN (Content Delivery Network)**: Accelerates content delivery and improves website performance.
+
+### APIs Enabled on GCP
+- **Cloud Storage API**: For managing storage buckets.
+- **Compute Engine API**: For managing load balancers and IP addresses.
+- **Cloud Resource Manager API**: For project and service account management.
+- **IAM API**: For service account roles and permissions.
+- **Cloud CDN API**: Enables the Content Delivery Network for the bucket.
+
+### Optional AWS Resources
+- **AWS Route 53**: Maps custom domain names to GCP Load Balancer.
+
+### Tools Used
+- **Terraform**: Automates provisioning of infrastructure resources.
+- **Git**: Manages version control for the repository.
+- **GCP Console**: Configures projects, APIs, and service accounts.
+
+---
 ## Steps to Get Started
 
 ### 1. **Clone the Repository**
