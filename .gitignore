@@ -1,0 +1,20 @@
+# Terraform State Files
+*.tfstate
+*.tfstate.backup
+
+# Ignore files created by Terraform Providers
+.terraform.lock.hcl
+
+# Ignore sensitive generated JSON files
+terraform.tfvars.json
+terraform.tfvars.backup
+# Ignore logs and debugging files
+*.log
+*.plan
+planfile
+# Ignore executable binaries or temporary files
+*.exe
+*.tmp
+*.bak
+*.json
+*.txt
