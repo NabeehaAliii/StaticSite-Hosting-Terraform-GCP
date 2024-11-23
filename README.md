@@ -95,9 +95,3 @@ terraform destroy
 ```
 
 ---
-
-## Notes
-- Ensure your `.gitignore` excludes sensitive files such as `terraform.tfvars` and `service-account-key.json`.
-- Update the `provider.tf` file to match your setup if you modify regions or service account credentials.
-
-Let me know if you want any additional instructions or modifications!
